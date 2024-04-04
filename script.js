@@ -33,6 +33,9 @@ addbook.addEventListener("click",function(event){
     container.append(div)
     var popupoverlay = document.getElementById("over").style.display = "none";
     var popupbox = document.getElementById("boxy").style.display = "none";
+    booktitleinput.value=""
+    bookauthorinput.value=""
+    bookdescriptioninput.value=""
 
 })
 
@@ -42,11 +45,6 @@ function deletebook(){
 
 var resetall=document.getElementById("resetall")
 
-resetall.addEventListener("click",function(event){
-    event.preventDefault()
-    booktitleinput.value=""
-    bookauthorinput.value=""
-    bookdescriptioninput.value=""
-})
+
 
     
